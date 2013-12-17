@@ -20,8 +20,20 @@
     <!-- app menu -->
     <div data-bb-type="menu">
         <div onclick="bb.pushScreen('help.html', 'help');" data-bb-type="menu-item" data-bb-img="images/icons/help.png" data-bb-pin="left">Help</div>
-        <div onclick="bb.pushScreen('about.html', 'about');" data-bb-type="menu-item" data-bb-img="images/icons/info.png" data-bb-pin="center">About</div>
+        <div onclick="bb.pushScreen('about.html', 'about');" data-bb-type="menu-item" data-bb-img="images/icons/info.png">About</div>
         <div onclick="bb.pushScreen('settings.html', 'settings');" data-bb-type="menu-item" data-bb-img="images/icons/settings.png" data-bb-pin="right">Settings</div>
+    </div>
+	
+    <div id="accountslist" data-bb-type="image-list" data-bb-images="none" data-bb-context="true">
+        <div data-bb-type="item" data-bb-title="Title">Description</div>
+        <div data-bb-type="item" data-bb-title="Title 2" data-bb-accent-text="Accent Text">Description 1</div>
+    </div>
+
+    <div data-bb-type="context-menu" id="mycontextmenu">
+        <div data-bb-type="action" data-bb-img="local:///icons/up.png" onclick="moveAccount('up', document.getElementById('mycontextmenu').menu.selected.selected.id);">Move Up</div>
+        <div data-bb-type="action" data-bb-img="local:///icons/down.png" onclick="moveAccount('down', document.getElementById('mycontextmenu').menu.selected.selected.id);">Move Down</div>
+        <div data-bb-type="action" data-bb-img="local:///icons/edit.png" onclick="bb.pushScreen('accountEdit.htm','accountEdit', document.getElementById('mycontextmenu').menu.selected.selected.id);">Edit</div>
+        <div data-bb-type="action" data-bb-img="local:///icons/delete.png" onclick="deleteAccount();">Delete</div>
     </div>
 
     <!-- action bar -->
