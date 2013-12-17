@@ -186,8 +186,10 @@ If you'd like to learn more about the [Built For BlackBerry](https://developer.b
 
 	```
 	webworks plugin add com.blackberry.app
+	webworks plugin add com.blackberry.bbui (download here: https://github.com/listedegarde/BBUI-Plugin/)
 	webworks plugin add com.blackberry.invoke
 	webworks plugin add com.blackberry.invoke.card
+	webworks plugin add com.blackberry.ui.contextmenu
 	webworks plugin add com.blackberry.ui.cover
 	webworks plugin add com.blackberry.ui.toast
 	webworks plugin add com.blackberry.utils	
